@@ -5,11 +5,11 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [.library(name: "DaroBidAdMobAdapter", targets: ["DaroBidAdMobAdapter", "DaroBidAdMobDependencies"])],
     dependencies: [
-        .package(url: "https://github.com/delightroom/daro-rtb-ios-sdk.git", exact: "26.9.900"),
+        .package(url: "https://github.com/delightroom/daro-rtb-ios-sdk.git", exact: "26.9.1700"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "13.0.0")
     ],
     targets: [
-        .binaryTarget(name: "DaroBidAdMobAdapter", url: "https://github.com/delightroom/daro-rtb-ios-admob-adapter/releases/download/2.0.0/DaroBidAdMobAdapter-2.0.0.zip", checksum: "b9ea9fad4066dc914fc2355460c9685742b1664b80c30471094b1250757451c4"),
+        .binaryTarget(name: "DaroBidAdMobAdapter", url: "https://github.com/delightroom/daro-rtb-ios-admob-adapter/releases/download/2.0.1/DaroBidAdMobAdapter-2.0.1.zip", checksum: "8f5171556ecd03b35e343e73663c133bcec1828c4b24e80b66825df5565ef592"),
         .target(name: "DaroBidAdMobDependencies", dependencies: [
             "DaroBidAdMobAdapter",
             .product(name: "DaroBid", package: "daro-rtb-ios-sdk"),
