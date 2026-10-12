@@ -5,11 +5,11 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [.library(name: "DaroBidAdMobAdapter", targets: ["DaroBidAdMobAdapter", "DaroBidAdMobDependencies"])],
     dependencies: [
-        .package(url: "https://github.com/delightroom/daro-rtb-ios-sdk.git", exact: "26.10.1200-rc.2"),
+        .package(url: "https://github.com/delightroom/daro-rtb-ios-sdk.git", exact: "26.10.1201"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "13.0.0")
     ],
     targets: [
-        .binaryTarget(name: "DaroBidAdMobAdapter", url: "https://github.com/delightroom/daro-rtb-ios-admob-adapter/releases/download/2.0.4-rc.2/DaroBidAdMobAdapter-2.0.4-rc.2.zip", checksum: "d2159e4de2cf5431159d629f3400e46cc10c913d76e162176a876b043203f4f2"),
+        .binaryTarget(name: "DaroBidAdMobAdapter", url: "https://github.com/delightroom/daro-rtb-ios-admob-adapter/releases/download/2.0.4/DaroBidAdMobAdapter-2.0.4.zip", checksum: "17b85fd4c80294d2527152eff973828cd4c161b149dcab57eea19b92890e5d90"),
         .target(name: "DaroBidAdMobDependencies", dependencies: [
             "DaroBidAdMobAdapter",
             .product(name: "DaroBid", package: "daro-rtb-ios-sdk"),
